@@ -3,7 +3,9 @@ const express = require('express');
 const app = express()
 const routers = require('./router/index');
 
+app.use(express.json())
 app.use('/', routers)
+
 
 
 
